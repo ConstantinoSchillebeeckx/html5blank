@@ -96,7 +96,7 @@ function html5blank_nav()
         } else {
             $redirect_link = get_permalink();
         }
-        $menu .= sprintf("<li><a href='/wp-login.php?redirect_to=%s'>Login</a></li>", $redirect_link);
+        $menu .= sprintf("<li><a href='%s'>Login</a></li>", wp_login_url( $redirect_link ) );
     }
     echo $menu;
 //    get_template_part('searchform');
