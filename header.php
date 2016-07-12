@@ -24,28 +24,30 @@
         </script>
 
 	</head>
-	<body <?php body_class(); ?>>
+	<body <?php body_class('container-fluid'); ?>>
 
 		<!-- wrapper -->
-		<div class="wrapper">
+		<div class="container wrapper">
 
-			<!-- header -->
-			<header class="header clear" role="banner">
+            <!-- header -->
+            <header class="header clear" role="banner">
 
-					<!-- logo -->
-					<div class="logo">
-						<a href="<?php echo home_url(); ?>">
-							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="logo-img">
-						</a>
-					</div>
-					<!-- /logo -->
+                    <!-- nav -->
+                    <nav class="navbar navbar-default navbar-fixed-top" role="navigation"><div class="container-fluid">
+                        <div class="navbar-header">
+                              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                              </button>
+                            <a href="<?php echo home_url(); ?>" title="Home">
+                            <img style="margin:5px; width:40px; height:40px;" src="<?php echo get_template_directory_uri(); ?>/img/logo.svg"  alt="Logo" class="logo-img"></img></a>
+    </div>
 
-					<!-- nav -->
-					<nav class="nav" role="navigation">
-						<?php html5blank_nav(); ?>
-					</nav>
-					<!-- /nav -->
+                        <?php html5blank_nav(); ?>
+                    </div></nav>
+                    <!-- /nav -->
 
-			</header>
-			<!-- /header -->
+            </header>
+            <!-- /header -->
