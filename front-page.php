@@ -7,7 +7,6 @@
 
     <!-- article -->
     <article id="search">
-
         <?php // content here ?>
 
     </article>
