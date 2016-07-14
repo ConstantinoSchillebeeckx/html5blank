@@ -278,3 +278,7 @@ input[type="search"] {
     page-break-after: avoid;
   }
 }
+
+main {
+    margin-top: 50px;
+}
