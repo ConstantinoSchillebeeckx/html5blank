@@ -7,12 +7,7 @@
 
     <!-- article -->
     <article id="search">
-        <?php // content here 
-            global $current_user;
-            $company = get_user_meta( $current_user->ID, 'company', true);
-            $db = new Database($company);
-            $db->show();
-        ?>
+        <?php // content here ?>
 
     </article>
     <!-- /article -->
