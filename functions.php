@@ -419,6 +419,7 @@ add_filter('image_send_to_editor', 'remove_width_attribute', 10 ); // Remove wid
 
 // Remove Filters
 remove_filter('the_excerpt', 'wpautop'); // Remove <p> tags from Excerpt altogether
+remove_filter('the_content', 'wpautop'); // Remove <p> tags from Content altogether
 
 // Shortcodes
 add_shortcode('html5_shortcode_demo', 'html5_shortcode_demo'); // You can place [html5_shortcode_demo] in Pages, Posts now.
